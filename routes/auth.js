@@ -39,12 +39,11 @@ router.post('/login', async (req, res) => {
 
     const token = createJSONToken(email);
 
-    // ✅ Return name and email too
     res.json({
       token,
       userId: user._id,
-      name: user.name,   // 👈 include the name
-      email: user.email  // optional, but helpful
+      name: user.name,  
+      email: user.email 
     });
 
   } catch (err) {

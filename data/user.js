@@ -1,4 +1,3 @@
-// data/user.js
 const { hash } = require('bcryptjs');
 const User = require('../models/Users.js');
 
